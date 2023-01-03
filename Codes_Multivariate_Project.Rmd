@@ -34,8 +34,6 @@ From the screeplot, we see that the first 3 Principal components are enough to e
 
 
 ```{r}
-install.packages("factoextra")
-install.packages("ggplot2")
 library(ggplot2)
 library(factoextra)
 fviz_pca_var(data_pca)
@@ -60,7 +58,6 @@ To conduct canonical correlation, we need two sets of variable. From the Proncip
 
 ```{r}
 library(CCA)
-install.packages("tidyverse")
 library(tidyverse)
 X = cbind(data$V3, data$V10, data$V1, data$V5)
 Y = cbind(data$V4, data$V8, data$V7, data$V9)
